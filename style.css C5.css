@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+header h1 {
+    margin: 0;
+}
+
+header p {
+    margin: 0;
+}
+
+main {
+    padding: 20px;
+}
+
+#timeBlocks {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.time-block {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.time-block.past {
+    background-color: #d3d3d3;
+}
+
+.time-block.present {
+    background-color: #ffcccb;
+}
+
+.time-block.future {
+    background-color: #90ee90;
+}
+
+.time-block .hour {
+    width: 50px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.time-block .event {
+    flex: 1;
+    padding: 5px;
+    border: none;
+    outline: none;
+}
+
+.time-block .saveBtn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.time-block .saveBtn:hover {
+    background-color: #45a049;
+}
